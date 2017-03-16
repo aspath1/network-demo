@@ -2,3 +2,23 @@
 - ios_facts:
     gather_subset: all
     provider: "{{ cli }}"
+
+- ios_facts:
+    gather_subset: 
+    - hardware
+    provider: "{{ cli }}"
+ 
+ - ios_facts:
+    gather_subset:
+    - interfaces
+    provider: "{{ cli }}"
+  
+  - ios_facts:
+    gather_subset:
+    - config
+    provider: "{{ cli }}"
+  
+  - ios_facts:
+    gather_subset:
+    - default
+    provider: "{{ cli }}"
