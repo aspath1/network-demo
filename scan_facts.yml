@@ -1,0 +1,8 @@
+---
+- name: Scan Network Devices
+  hosts: all
+  connection: local
+
+  roles:
+    - name: Scan and Gather facts
+      role: facts
