@@ -1,5 +1,4 @@
 ---
-vars:
-  cli:
-    host: "{{ inventory_hostname }}"
-    transport: cli
+cli:
+  host: "{{ inventory_hostname }}"
+  transport: cli
