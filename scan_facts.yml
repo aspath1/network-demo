@@ -1,7 +1,7 @@
 ---
 - name: Scan Network Devices
   hosts: all
-  connection: local
+  connection: network_cli
 
   roles:
     - name: Scan and Gather facts
